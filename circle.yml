@@ -5,5 +5,5 @@ machine:
 deployment:
   staging:
     branch: master
-    heroku: pinerostorreslab6
+    heroku:
       appname: pinerostorreslab6
