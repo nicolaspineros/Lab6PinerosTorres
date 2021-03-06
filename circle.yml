@@ -1,0 +1,9 @@
+machine:
+  java:
+    version: oraclejdk8
+
+deployment:
+  staging:
+    branch: master
+    heroku: pinerostorreslab6
+      appname: pinerostorreslab6
