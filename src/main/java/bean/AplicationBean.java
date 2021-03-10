@@ -17,10 +17,6 @@ public class AplicationBean {
     private int valor = 0;
     private List<Integer> listintentos = new ArrayList<>();
     
-    public AplicationBean(){
-        
-    }
-    
     public void guess(){
         if(intentos > 10){
             setEstado("PERDIÓ");
