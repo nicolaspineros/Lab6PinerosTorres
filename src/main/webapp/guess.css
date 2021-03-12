@@ -1,0 +1,15 @@
+h1 {
+    color: black;
+    text-align: center;
+    background-color: lightGray;
+    text-decoration: underline;
+    font-family: cursive;
+    margin: 25px;
+    border: 3px solid black;
+}
+
+#guess_form{
+    margin: 25px;
+    background-color: lightgrey;
+    border: 3px solid black;
+}
