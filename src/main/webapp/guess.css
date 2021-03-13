@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
 h1 {
     color: black;
     text-align: center;
@@ -12,4 +20,40 @@ h1 {
     margin: 25px;
     background-color: lightgrey;
     border: 3px solid black;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table, th, td{
+    margin: 25px;
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    padding: 15px;
+}
+
+.column{
+    width: 50%;
+}
+
+.column.left{
+    float: left;
+    width: 50%;
+    background-color: lightcoral;
+}
+
+.column.rigth{
+    float: left;
+    width: 50%;
+    background-color: lightslategray;
+}
+
+@media screen and (max-width: 600px) {
+    .column.left, .column.right {
+      width: 100%;
+    }
 }

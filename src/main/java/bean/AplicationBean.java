@@ -19,20 +19,20 @@ public class AplicationBean {
     
     public void guess(){
         if(intentos > 10){
-            setEstado("PERDIÓ");
+            setEstado("PERDIO");
             restart();
         }else if(valor < 0 | valor > 10){
             intentos += 1;
-            setEstado("Seleccione un número mayor o igual a 0 y menor que 10");
+            setEstado("Seleccione un numero mayor o igual a 0 y menor que 10");
             acumulado -= 10000;
             listintentos.add(valor);
         }else if(valor==numeroRandom){
             intentos += 1;
-            setEstado("GANÓ");
+            setEstado("GANO");
             restart();
         } else{
             intentos += 1;
-            setEstado("ESTE NO ES EL NÚMERO");
+            setEstado("ESTE NO ES EL NUMERO");
             acumulado -= 10000;
             listintentos.add(valor);
         }
